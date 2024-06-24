@@ -1,1 +1,14 @@
-{}
+{
+  "routes": [
+    {
+      "route": "/*",
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/*",
+      "headers": {
+        "cache-control": "no-store"
+      }
+    }
+  ]
+}
